@@ -9,10 +9,16 @@
     --cor-secundaria: #0f4658;
     --fonte-forte: 600;
     --fonte-tamanho-mobile: 10px;
+    --fonte-tamanho-desktop: 16px;
+    --sombra-externa: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    --sombra-interna: inset 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 body, html {
     width: 100vw;
     height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--fonte-tamanho-mobile);
+    overflow-x: hidden;
 }
 header {
     width: 100%;
@@ -22,7 +28,7 @@ header {
     background: url('../image/logomarca/logomarca.png');
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100px;
     height: 20px;
     display: inline-block;
@@ -31,7 +37,7 @@ header {
 menu {
     display: inline-block;
     float: right;
-    margin-top: 8px;
+    margin-top: 15px;
     margin-right: 10%;
 }
 ul > li {
@@ -42,8 +48,72 @@ li > a {
     margin-right: 10px;
     color: var(--cor-secundaria);
     font-weight: var(--fonte-forte);
-    font-size: var(--fonte-tamanho-mobile);
 }
 li > a:hover {
     color: var(--cor-principal);
+}
+main {
+    width:  90%;
+    margin: auto;
+}
+section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+section > p {
+    text-align: center;
+    font-weight: var(--fonte-forte);
+    width: 90%;
+}
+div.container {
+    width: 90%;
+    height: 200px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: var(--sombra-interna);
+}
+div.container#destro {
+    background-image: url(../image/clients/background-paiva.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+div.container > p {
+    margin-top: 40px;
+    text-align: justify;
+    color: white;
+    width: 50%;
+}
+
+@media screen and (min-width: 720px) {
+    body, html {
+        font-size: var(--fonte-tamanho-desktop);
+    }
+    #logomarca {
+        height: 55px;
+        margin-left: 27%;
+    }
+    menu {
+        margin-top: 20px;
+        margin-right: 30%;
+    }
+    main {
+        width: 50%;
+    }
+    section {
+        margin-top: 15px;
+        height: 500px;
+    }
+    div.container {
+        height: 500px;
+    }
+    div.container#destro {
+        background-size: cover;
+        background-position: center right;
+    }
+    div.container > p {
+        margin-top: 140px;
+        margin-left: 10px;
+    }
 }
