@@ -74,7 +74,7 @@ div.container {
     box-shadow: var(--sombra-interna);
 }
 div.container#destro {
-    background-image: url(../image/clients/background-paiva.png);
+    background-image: url(../image/clients/background-destro.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
