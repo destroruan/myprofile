@@ -8,6 +8,7 @@
     --cor-principal: #24a3c5;
     --cor-secundaria: #0f4658;
     --fonte-forte: 600;
+    --fonte-mtforte: 800;
     --fonte-tamanho-mobile: 10px;
     --fonte-tamanho-desktop: 16px;
     --sombra-externa: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -32,7 +33,7 @@ header {
     width: 100px;
     height: 20px;
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 menu {
     display: inline-block;
@@ -63,15 +64,16 @@ section {
 section > p {
     text-align: center;
     font-weight: var(--fonte-forte);
-    width: 90%;
+    width: 100%;
 }
 div.container {
-    width: 90%;
+    width: 80%;
     height: 200px;
     background-color: black;
     border-radius: 20px;
     padding: 10px;
     box-shadow: var(--sombra-interna);
+    margin: auto;
 }
 div.container#destro {
     background-image: url(../image/clients/background-destro.png);
@@ -85,14 +87,48 @@ div.container > p {
     color: white;
     width: 50%;
 }
-
+section.portfolio {
+    text-align: center;
+}
+div.cliente {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+    box-shadow: var(--sombra-interna);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+div.cliente:hover {
+    transform: scale(0.9);
+    box-shadow: var(--sombra-externa);
+}
+div#marido-de-aluguel {
+    background: url(../image/clients/marido-logo.png) no-repeat;
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+div#marido-de-aluguel:hover {
+    background-image: url(../image/clients/marido.png);
+}
+section.portfolio > p {
+    margin-top: 15px;
+}
+section.portfolio > p > a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: var(--fonte-mtforte);
+}
+section.portfolio > p > a:hover {
+    color: var(--cor-principal);
+}
 @media screen and (min-width: 720px) {
     body, html {
         font-size: var(--fonte-tamanho-desktop);
     }
     #logomarca {
         height: 55px;
-        margin-left: 27%;
+        margin-left: 30%;
     }
     menu {
         margin-top: 20px;
