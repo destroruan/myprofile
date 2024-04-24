@@ -59,7 +59,7 @@ main {
 }
 section {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 section > p {
     text-align: center;
@@ -71,7 +71,7 @@ div.container {
     height: 200px;
     background-color: black;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: var(--sombra-interna);
     margin: auto;
 }
@@ -84,7 +84,7 @@ div.container#destro {
 div.container > p {
     text-align: justify;
     color: white;
-    width: 50%;
+    width: 60%;
 }
 section.portfolio {
     text-align: center;
@@ -138,18 +138,14 @@ section.portfolio > p > a:hover {
     }
     section {
         margin-top: 15px;
-        height: 500px;
+        height: 300px;
     }
     div.container {
-        height: 500px;
+        height: 300px;
     }
     div.container#destro {
         background-size: cover;
         background-position: center right;
-    }
-    div.container > p {
-        margin-top: 100px;
-        margin-left: 10px;
     }
     div.cliente {
         width: 150px;
