@@ -93,8 +93,8 @@ div.cliente {
     cursor: pointer;
     display: inline-block;
     margin-top: 15px;
-    width: 200px;
-    height: 200px;
+    width: 80px;
+    height: 80px;
     box-shadow: var(--sombra-interna);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -150,5 +150,9 @@ section.portfolio > p > a:hover {
     div.container > p {
         margin-top: 100px;
         margin-left: 10px;
+    }
+    div.cliente {
+        width: 150px;
+        height: 150px;
     }
 }
