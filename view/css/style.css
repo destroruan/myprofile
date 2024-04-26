@@ -75,12 +75,6 @@ div.container {
     box-shadow: var(--sombra-interna);
     margin: auto;
 }
-div.container#destro {
-    background-image: url(../image/clients/background-destro.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
 div.container > p {
     text-align: justify;
     color: white;
@@ -144,10 +138,6 @@ section.portfolio > p > a:hover {
     }
     div.container {
         height: 300px;
-    }
-    div.container#destro {
-        background-size: cover;
-        background-position: center right;
     }
     div.cliente {
         width: 150px;
