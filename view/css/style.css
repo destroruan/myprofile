@@ -29,11 +29,11 @@ header {
     background: url('../image/logomarca/logomarca.png');
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 10px;
+    margin-top: 12px;
     width: 100px;
-    height: 20px;
+    height: 25px;
     display: inline-block;
-    margin-left: 12%;
+    margin-left: 10%;
 }
 menu {
     display: inline-block;
@@ -126,7 +126,9 @@ section.portfolio > p > a:hover {
         font-size: var(--fonte-tamanho-desktop);
     }
     #logomarca {
-        height: 55px;
+        width: 150px;
+        height: 50px;
+        margin-top: 14px;
         margin-left: 30%;
     }
     menu {
