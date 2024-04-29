@@ -9,6 +9,7 @@
     --cor-secundaria: #0f4658;
     --fonte-forte: 600;
     --fonte-mtforte: 800;
+    --arredondamento: 10px;
     --fonte-tamanho-mobile: 10px;
     --fonte-tamanho-desktop: 16px;
     --sombra-externa: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -115,6 +116,52 @@ section.portfolio > p > a {
 section.portfolio > p > a:hover {
     color: var(--cor-principal);
 }
+section.sobre {
+    height: 135px;
+    text-align: justify;
+}
+section div {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--arredondamento);
+    box-shadow: var(--sombra-interna);
+}
+div#explication {
+    background: url("../image/clients/marido.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+div#explication > p {
+    display: flex;
+    align-items: center;
+    color: var(--cor-secundaria);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 85%;
+}
+section.paleta {
+    height: 250px;
+    text-align: justify;
+}
+section.redes {
+    height: max-content;
+    text-align: center;
+}
+section.redes > a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    margin-right: 10px;
+}
+section.redes > a:hover{
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+div#paletadecores {
+    background: url("../image/clients/paleta.png") no-repeat;
+    background-position: center center;
+    background-size: contain;    
+}
 @media screen and (min-width: 720px) {
     body, html {
         font-size: var(--fonte-tamanho-desktop);
@@ -142,5 +189,9 @@ section.portfolio > p > a:hover {
     div.cliente {
         width: 150px;
         height: 150px;
+    }
+    section.paleta {
+        height: 500px;
+        text-align: justify;
     }
 }
