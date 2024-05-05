@@ -36,6 +36,14 @@ header {
     display: inline-block;
     margin-left: 10%;
 }
+#logomarca2 {
+    background: url('../image/logomarca/Simbol.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
 menu {
     display: inline-block;
     float: right;
@@ -58,109 +66,30 @@ main {
     width:  90%;
     margin: auto;
 }
+main > h1 {
+    text-align: center;
+    font-size: var(--fonte-tamanho-mobile);
+}
 section {
-    width: 90%;
+    width: 100%;
     margin-bottom: 50px;
 }
-section > p {
-    text-align: center;
-    font-weight: var(--fonte-forte);
-    width: 100%;
-}
-div.container {
-    width: 80%;
-    height: 200px;
-    background-color: black;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: var(--sombra-interna);
-    margin: auto;
-}
-div.container > p {
-    text-align: justify;
-    color: white;
-    width: 60%;
-}
-section.portfolio {
-    text-align: center;
-}
-div.cliente {
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 15px;
-    width: 80px;
-    height: 80px;
-    box-shadow: var(--sombra-interna);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-div.cliente:hover {
-    transform: scale(0.9);
-    box-shadow: var(--sombra-externa);
-}
-div#marido-de-aluguel {
-    background: url(../image/clients/marido-logo.png) no-repeat;
-    background-size: cover;
-    transition: background-image 0.3s ease;
-}
-div#marido-de-aluguel:hover {
-    background-image: url(../image/clients/marido.png);
-}
-section.portfolio > p {
-    margin-top: 15px;
-}
-section.portfolio > p > a {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-weight: var(--fonte-mtforte);
-}
-section.portfolio > p > a:hover {
-    color: var(--cor-principal);
-}
-section.sobre {
-    height: 135px;
-    text-align: justify;
-}
-section div {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--arredondamento);
-    box-shadow: var(--sombra-interna);
-}
-div#explication {
-    background: url("../image/clients/marido.png") no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-div#explication > p {
+div.identidade{
     display: flex;
     align-items: center;
-    color: var(--cor-secundaria);
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 85%;
+    justify-content: center;
 }
-section.paleta {
-    height: 250px;
-    text-align: justify;
-}
-section.redes {
-    height: max-content;
+div.identidade > p{
     text-align: center;
+    font-size: var(--fonte-tamanho-mobile);
 }
-section.redes > a {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    margin-right: 10px;
-}
-section.redes > a:hover{
-    text-decoration: none;
+div.identidade i{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 1px solid var(--cor-secundaria);
     color: var(--cor-principal);
-}
-div#paletadecores {
-    background: url("../image/clients/paleta.png") no-repeat;
-    background-position: center center;
-    background-size: contain;    
 }
 @media screen and (min-width: 720px) {
     body, html {
@@ -172,6 +101,10 @@ div#paletadecores {
         margin-top: 14px;
         margin-left: 30%;
     }
+    #logomarca2 {
+        width: 50px;
+        height: 50px;
+    }
     menu {
         margin-top: 20px;
         margin-right: 30%;
@@ -179,19 +112,19 @@ div#paletadecores {
     main {
         width: 50%;
     }
+    main > h1 {
+        text-align: center;
+        font-size: var(--fonte-tamanho-desktop);
+    }
+    div.identidade > p{
+        text-align: center;
+        font-size: var(--fonte-tamanho-desktop);
+    }
+    div.identidade i{
+        font-size: 30px;
+    }
     section {
         margin-top: 15px;
         height: 300px;
-    }
-    div.container {
-        height: 300px;
-    }
-    div.cliente {
-        width: 150px;
-        height: 150px;
-    }
-    section.paleta {
-        height: 500px;
-        text-align: justify;
     }
 }
